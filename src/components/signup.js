@@ -62,8 +62,7 @@ export default class Signup extends React.Component {
           handleSubmit(event) {
             console.log('A name was submitted: ' + this.state.username);
             event.preventDefault();
-            // window.location = '/login';
-            fetch('http://localhost:8080/api/users',{
+            fetch(`${API_BASE_URL}/api/users`,{
               method: "POST",
               body: JSON.stringify({
                   username: this.state.username,

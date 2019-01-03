@@ -4,6 +4,7 @@ import Teams from './teams';
 import AddTeam from './add-team';
 import Articles from './articles';
 import './main.css';
+import {API_BASE_URL} from '../config'
 
 export default class Main extends React.Component {
     constructor(props) {
@@ -32,7 +33,7 @@ export default class Main extends React.Component {
             teams: [...this.state.teams, { team }]
         });
         console.log('Teams', team)
-        fetch('http://localhost:8080/teams/' + localStorage.getItem('username'), {
+        fetch(`${API_BASE_URL}/teams/`+localStorage.getItem('username'), {
             method: "POST",
             body: JSON.stringify({
                 team: team,

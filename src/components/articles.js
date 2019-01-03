@@ -1,5 +1,6 @@
 import React from 'react';
 import './articles.css';
+import {API_BASE_URL} from '../config'
 
 
 export default class Articles extends React.Component {
@@ -59,7 +60,7 @@ export default class Articles extends React.Component {
 
     refreshArticles(){
         console.log('refresh');
-        fetch('http://localhost:8080/teams/'+localStorage.getItem('username'))
+        fetch(`${API_BASE_URL}/teams`/+localStorage.getItem('username'))
         .then(res => {
             if (!res.ok) { return Promise.reject(res.statusText); }
             return res.json()
@@ -110,7 +111,6 @@ export default class Articles extends React.Component {
             return (
 
                 <div className = "articles">
-                {/* <button onClick={this.refreshArticles}>Refresh</button> */}
                 {test}
                 </div>
             );

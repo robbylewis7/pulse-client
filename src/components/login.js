@@ -1,6 +1,7 @@
 import React from 'react';
 import TopInfo from './top-info'
 import './signup.css'
+import {API_BASE_URL} from '../config'
 
 
 export default class Login extends React.Component {
@@ -24,7 +25,7 @@ export default class Login extends React.Component {
   handleSubmit(event) {
     console.log('A name was submitted: ' + this.state.username);
     event.preventDefault();
-    fetch('http://localhost:8080/api/auth/login', {
+    fetch(`${API_BASE_URL}/api/auth/login`, {
       method: "POST",
       body: JSON.stringify({
         username: this.state.username,
