@@ -1,6 +1,7 @@
 import React from 'react';
 import TopInfo from './top-info'
 import './signup.css'
+import {API_BASE_URL} from './config'
 
 
 export default class Signup extends React.Component {
@@ -35,7 +36,8 @@ export default class Signup extends React.Component {
           }
 
           addTeam(username){
-            fetch('http://localhost:8080/teams',{
+            console.log(API_BASE_URL);
+            fetch(`${API_BASE_URL}/teams`,{
               method: "POST",
               body: JSON.stringify({
                   team: [],
