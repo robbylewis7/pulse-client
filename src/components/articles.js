@@ -59,8 +59,7 @@ export default class Articles extends React.Component {
     }
 
     refreshArticles(){
-        console.log('refresh');
-        fetch(`${API_BASE_URL}/teams`/+localStorage.getItem('username'))
+        fetch(`${API_BASE_URL}/teams/`+localStorage.getItem('username'))
         .then(res => {
             if (!res.ok) { return Promise.reject(res.statusText); }
             return res.json()
@@ -72,8 +71,7 @@ export default class Articles extends React.Component {
                 id: data.teams[0].id
             })
             let teams = data.teams[0].team.toString();
-             let teamsForNewsString = teams.replace(/,/g, '" OR "');
-            
+            let teamsForNewsString = teams.replace(/,/g, '" OR "');
             console.log(teamsForNewsString);
             this.getNews(teamsForNewsString);
         })
@@ -111,6 +109,7 @@ export default class Articles extends React.Component {
             return (
 
                 <div className = "articles">
+                {/* <button onClick={this.refreshArticles}>Refresh</button> */}
                 {test}
                 </div>
             );
