@@ -1,0 +1,61 @@
+.articleImg{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    transition: opacity .25s ease-in-out;
+
+}
+
+
+.content:hover .articleTitle{
+    display: none;
+}
+
+.content:hover .source{
+    display: block;
+}
+
+.content:hover .articleImg{
+    opacity: .1;
+}
+
+
+
+.article{
+    display: inline-flex;
+    margin: 0 3px;
+}
+
+
+.articleTitle{
+    color: white;
+    background: rgba(45, 49, 66, .6);
+    font-size: 14px;
+    position: absolute;
+    text-align: center;
+    width: 380px;
+    padding: 10px 10px;
+    height: 40px;
+    margin: auto 0;
+}
+
+.source{
+    display: none;
+    padding: 10px;
+    font-size: 12px;
+    position: absolute;
+    align-self: center;
+    border: 2px solid #4a4a4a;
+}
+
+
+#articleLink{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-transform: capitalize;
+}
+
+p{
+    color:rgba(45, 49, 66, 1);
+}

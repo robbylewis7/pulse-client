@@ -1,0 +1,189 @@
+@font-face{
+    font-family: Oakes;
+    src: url(Oakes-Grotesk-Medium.otf);
+}
+
+li, a, h1{
+    font-family: Oakes;
+}
+
+#leagues{
+    width: 80%;
+    text-align: center;
+}
+
+#logoutButton{
+    border: 3px solid #4a4a4a;
+    background: none;
+    padding: 3px;
+    border-radius: 8px;
+    color: #4a4a4a;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 5px;
+    margin-top: 50px;
+    width: 80px;
+    height: 40px;
+    margin-right: 50px;
+}
+
+#logoutButton:hover{
+    background-color: #4a4a4a;
+    color: white;
+    cursor: pointer;
+    float: right;
+}
+
+#title{
+    color: #4a4a4a;
+    align-self: flex-end;
+}
+
+.lists {
+    display: block;
+    width: 100%;
+}
+
+#mainContent{
+    display: inline-flex;
+    width: 100%;
+}
+
+#logo{
+    width: 150px;
+    height: 150px;
+}
+
+
+#logoHeader{
+    display: flex;
+    align-content: center;
+
+}
+
+#mainLogoName{
+    font-size: 80px;
+    color: #4a4a4a;
+    align-self: center;
+    font-family: 'Staatliches', cursive;
+}
+
+#header{
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.articles{
+    margin-top: 110px;
+    margin-left: 60px;
+}
+
+
+.teams{
+    color: #4a4a4a;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 140px;
+    border-radius: 10px;
+    width: 65%;
+    border: 1px solid #4a4a4a;
+    margin-right: 250px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+#cancel{
+    margin-bottom: 20px;
+    margin-left: 4.5%;
+}
+
+#header{
+    margin-top: 50px;
+    margin-left: 140px;
+    padding-bottom: 40px;
+}
+
+.add-button{
+    margin-left: 140px;
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+
+    #mainContent{
+        display: inline-block;
+    }
+
+    .add-button{
+        justify-content: center;
+    }
+
+    .articles{
+        margin-top: 50px;
+        margin-left: 0px;
+        text-align: center;
+    }
+
+    .teams{
+        margin: 15px auto;
+    }
+
+
+    .add-button{
+        text-align: center;
+        margin: 0px;
+    }
+
+
+
+    
+
+}
+
+@media only screen and (max-width: 900px) {
+
+
+    #leagues{
+        display: block;
+        width: 50%;
+        text-align: center;
+    }
+
+
+
+
+  }
+
+  @media only screen and (max-width: 750px) {
+    #mainLogoName{
+        display: none;
+    }
+
+
+    #header{
+        margin-bottom: 70px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+
+  }
+
+  @media only screen and (max-width: 400px) {
+    #leagues{
+        font-size: 10px;
+    }
+
+    #header{
+        margin-top: 50px;
+    }
+}
