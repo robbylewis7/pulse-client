@@ -1,7 +1,7 @@
 import React from 'react';
 import TopInfo from './top-info'
 import './signup.css'
-import {API_BASE_URL} from './config'
+import {API_BASE_URL} from '../config'
 
 
 export default class Signup extends React.Component {
