@@ -21,7 +21,6 @@ Pulse is a one-stop-shop for everything sports news. Choose all of your favorite
  
 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
