@@ -71,7 +71,7 @@ export default class Login extends React.Component {
             <div id="loginDemo">
               <p id="loginDemo">-Please use the following for demo-</p>
               <ul>
-                <li>User: Testing</li>
+                <li>User: TestAccount</li>
                 <li>Pass: Testing123</li>
               </ul>
             </div>
