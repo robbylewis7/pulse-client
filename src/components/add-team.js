@@ -77,8 +77,9 @@ export default class AddTeam extends React.Component {
                     <img src={team.logo} className="teamLogo" alt = "NBA team logo"></img>
                     <label className="teamLabel">
                         <input type="checkbox"
-                            className = "checkboxTeam"
+                            id = "checkboxTeam"
                             value={team.team}
+                            className="form-check-input input"
                             onChange={this.handleCheck}
                             defaultChecked={savedTeams.includes(team.team) ? true : false}
                         />
@@ -95,7 +96,7 @@ export default class AddTeam extends React.Component {
                     <img src={team.logo} className="teamLogo" alt = "MLB team logo"></img>
                     <label className="teamLabel">
                         <input type="checkbox" value={team.team}
-                            className = "checkboxTeam"
+                            className="form-check-input input"
                             onChange={this.handleCheck}
                             defaultChecked={savedTeams.includes(team.team) ? true : false}
                         />
@@ -111,7 +112,7 @@ export default class AddTeam extends React.Component {
                     <img src={team.logo} className="teamLogo" alt = "NFL team logo"></img>
                     <label className="teamLabel">
                         <input type="checkbox" value={team.team}
-                            className = "checkboxTeam"
+                            className="form-check-input input"
                             onChange={this.handleCheck}
                             defaultChecked={savedTeams.includes(team.team) ? true : false}
                         />
@@ -127,8 +128,7 @@ export default class AddTeam extends React.Component {
                     <img src={team.logo} className="teamLogo" alt = "NHL team logo"></img>
                     <label className="teamLabel">
                         <input type="checkbox" value={team.team}
-                            className = "checkboxTeam"
-                            id = "check"
+                            className="form-check-input input"
                             onChange={this.handleCheck}
                             defaultChecked={savedTeams.includes(team.team) ? true : false}
                         />
