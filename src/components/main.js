@@ -99,7 +99,7 @@ export default class Main extends React.Component {
                     teams: data.teams,
                     id: data.teams[0].id
                 })
-                console.log(data);
+                console.log(data.teams[0].team.length);
                 let teams = data.teams[0].team.toString();
                 let teamsForNewsString = teams.replace(/,/g, '" OR "');
 
@@ -114,12 +114,8 @@ export default class Main extends React.Component {
 
 
 
-
-
-
-
-
     render() {
+
         const teams = this.state.teams.map((team, index) => (
             <Teams {...team} key={index} />));
 
@@ -134,8 +130,8 @@ export default class Main extends React.Component {
                                 onUpdate={team => this.updateTeam(team)}
                                 savedTeams={this.state.teams[0]}
                                 onEdit={hide => this.editTeams(hide)}
+                                teams={this.state.teams}
                             />
-
                         </li>
                         {this.state.hide &&
                             <>
@@ -145,7 +141,6 @@ export default class Main extends React.Component {
                     </ul>
                     {this.state.hide &&
                         <Articles
-                            teams={this.state.teams}
                         />
                     }
                 </div>

@@ -17,3 +17,11 @@
     width: 100%;
 }
 
+.error{
+    padding: 15px;
+    color: white;
+    font-size: 20px;
+    margin-left: 5px;
+    margin-bottom: 50px;
+    border-bottom: 3px solid white;
+}

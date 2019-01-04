@@ -31,6 +31,8 @@ h2{
 #team{
     color: #4a4a4a;
     margin-right: 20px;
+    border-bottom: 3px solid #70AE6E;
+
 }
 
 .add-button{
@@ -49,7 +51,6 @@ h2{
     cursor: pointer;
     background: #4a4a4a;
 }
-
 
 
 #addTeam img{

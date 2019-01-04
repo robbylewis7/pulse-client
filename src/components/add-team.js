@@ -56,8 +56,6 @@ export default class AddTeam extends React.Component {
 
     render() {
 
-
-
         if (!this.state.editing) {
             return (
                 <div className="add-button">
@@ -68,9 +66,10 @@ export default class AddTeam extends React.Component {
                 </div>
             );
         }
+        
+
 
         let savedTeams = this.props.savedTeams.team;
-        // console.log(savedTeams);
         let nbaTeams = teamList.NBA.map((team, index) => {
             return (
                 <div className="form-check" key={index}>

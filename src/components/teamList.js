@@ -52,7 +52,6 @@ let teamList = {
         {team: 'Tampa Bay Rays', logo: 'https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/tb.png'},
         {team: 'Chicago White Sox', logo: 'https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/chw.png'},
         {team: 'Cleveland Indians', logo: 'https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/cle.png'},
-        {team: 'Chicago White Sox', logo: 'https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/chw.png'},
         {team: 'Detroit Tigers', logo: 'https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/det.png'},
         {team: 'Kansas City Royals', logo: 'https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/kc.png'},
         {team: 'Minnesota Twins', logo: 'https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/min.png'},

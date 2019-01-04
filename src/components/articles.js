@@ -10,7 +10,6 @@ export default class Articles extends React.Component {
         this.state = {
             articles: []
         }
-        this.refreshArticles = this.refreshArticles.bind(this);
     }
 
     
@@ -58,6 +57,7 @@ export default class Articles extends React.Component {
         this.refreshArticles();
     }
 
+    
     refreshArticles(){
         fetch(`${API_BASE_URL}/teams/`+localStorage.getItem('username'))
         .then(res => {
@@ -71,6 +71,7 @@ export default class Articles extends React.Component {
                 id: data.teams[0].id
             })
             let teams = data.teams[0].team.toString();
+            console.log(data.teams[0].team.length);
             let teamsForNewsString = teams.replace(/,/g, '" OR "');
             console.log(teamsForNewsString);
             this.getNews(teamsForNewsString);
@@ -85,14 +86,11 @@ export default class Articles extends React.Component {
       }
 
 
+
     render() {
-
-
-    
-      
-
+        
         const {articles} = this.state;
-        let test = articles.map((article, index)=>{
+        let articleFeed = articles.map((article, index)=>{
             return <div className = "article" key={index}>
                         <div className = "content">  
                             <a href={article.url} id = "articleLink" target="_blank">
@@ -109,10 +107,8 @@ export default class Articles extends React.Component {
             return (
 
                 <div className = "articles">
-                {/* <button onClick={this.refreshArticles}>Refresh</button> */}
-                {test}
+                {articleFeed}
                 </div>
             );
-
-}
+        }
 }
