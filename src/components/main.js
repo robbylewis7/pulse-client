@@ -4,7 +4,7 @@ import Teams from './teams';
 import AddTeam from './add-team';
 import Articles from './articles';
 import './main.css';
-import {API_BASE_URL} from '../config'
+import { API_BASE_URL } from '../config'
 
 export default class Main extends React.Component {
     constructor(props) {
@@ -33,7 +33,7 @@ export default class Main extends React.Component {
             teams: [...this.state.teams, { team }]
         });
         console.log('Teams', team)
-        fetch(`${API_BASE_URL}/teams/`+localStorage.getItem('username'), {
+        fetch(`${API_BASE_URL}/teams/` + localStorage.getItem('username'), {
             method: "POST",
             body: JSON.stringify({
                 team: team,
@@ -99,11 +99,9 @@ export default class Main extends React.Component {
                     teams: data.teams,
                     id: data.teams[0].id
                 })
-                console.log(data.teams[0].team.length);
                 let teams = data.teams[0].team.toString();
                 let teamsForNewsString = teams.replace(/,/g, '" OR "');
 
-                console.log(teamsForNewsString);
                 this.getNews(teamsForNewsString);
             })
             .catch(error => {

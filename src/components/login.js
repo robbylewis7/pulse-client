@@ -1,7 +1,7 @@
 import React from 'react';
 import TopInfo from './top-info'
 import './signup.css'
-import {API_BASE_URL} from '../config'
+import { API_BASE_URL } from '../config'
 
 
 export default class Login extends React.Component {
@@ -68,13 +68,13 @@ export default class Login extends React.Component {
             <input type="text" placeholder="Username" name="username" value={this.state.username} onChange={this.handleInputChange} className="inputLogin" />
             <input type="password" placeholder="Password" name="password" value={this.state.password} onChange={this.handleInputChange} className="inputLogin" />
             <input type="submit" value="Submit" id="submitButtonLogin" className="loginButton" />
-            <div id = "loginDemo">
-            <p id = "loginDemo">-Please use the following for demo-</p>
+            <div id="loginDemo">
+              <p id="loginDemo">-Please use the following for demo-</p>
               <ul>
                 <li>User: Testing</li>
                 <li>Pass: Testing123</li>
               </ul>
-              </div>
+            </div>
           </form>
         </div>
       </div>

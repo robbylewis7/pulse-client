@@ -13,24 +13,24 @@ export default class TopInfo extends React.Component {
 
     render() {
         return (
-            <div id = "topInfo">
+            <div id="topInfo">
 
-                <div id = "logo">
-                    <img src={Pulse} id = "frontPageLogo"></img>
+                <div id="logo">
+                    <img src={Pulse} id="frontPageLogo"></img>
                     <Link to={'/'}>
-                        <div className = "frontPageName">Pulse</div>
+                        <div className="frontPageName">Pulse</div>
                     </Link>
                 </div>
 
-            <div id = "buttons">
-                <Link to={'/signup'}>
-                    <button id = "signupButton" className="loginButton">Sign Up</button>
-                </Link>
+                <div id="buttons">
+                    <Link to={'/signup'}>
+                        <button id="signupButton" className="loginButton">Sign Up</button>
+                    </Link>
 
-                <Link to={'/login'}>
-                    <button id = "loginButton" className="loginButton">Login</button>
-                </Link>
-            </div>
+                    <Link to={'/login'}>
+                        <button id="loginButton" className="loginButton">Login</button>
+                    </Link>
+                </div>
 
             </div>
         );

@@ -11,9 +11,9 @@ export default class Teams extends React.Component {
     render() {
 
         let teams = this.props.team;
-        
+
         let aggLeagues = [];
-        
+
 
         teamList.NBA.map((team) => {
             aggLeagues.push(team);
@@ -30,42 +30,25 @@ export default class Teams extends React.Component {
         teamList.NHL.map((team) => {
             aggLeagues.push(team);
         });
-        
 
-
-
- 
 
         let team = teams.map((team, index) => {
-
-            let teamIndex = aggLeagues.map(function(team){
-
+            let teamIndex = aggLeagues.map(function (team) {
                 return team.team;
-
-            }).indexOf(team); 
-
+            }).indexOf(team);
 
 
+            return <li key={index} className={"teams"}>{team}
 
+                <img src={aggLeagues[teamIndex].logo} className="teamIconList"></img>
 
-
-
-           return <li key={index} className={"teams"}>{team}
-            
-           <img src={aggLeagues[teamIndex].logo} className="teamIconList"></img>
-
-
-           
-           </li>                
+            </li>
 
         });
 
         return (
-
             <>
-
                 {team}
-
             </>
 
         );

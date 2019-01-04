@@ -22,7 +22,6 @@ export default class AddTeam extends React.Component {
         var selectedTeams = Array.from(checked).map(function (team) {
             return team.value
         });
-        // console.log('checked', selectedTeams)
         this.props.onUpdate(selectedTeams)
         this.setState({
             editing: false
@@ -59,25 +58,25 @@ export default class AddTeam extends React.Component {
         if (!this.state.editing) {
             return (
                 <div className="add-button">
-                
-                <h1 id = "team">Teams</h1>
+
+                    <h1 id="team">Teams</h1>
                     <button id="addTeam"
                         onClick={() => this.setEditing(true)}
-                    ><img src={add} id="addImg" alt = "Add your teams"></img></button>
+                    ><img src={add} id="addImg" alt="Add your teams"></img></button>
                 </div>
             );
         }
-        
+
 
 
         let savedTeams = this.props.savedTeams.team;
         let nbaTeams = teamList.NBA.map((team, index) => {
             return (
                 <div className="form-check" key={index}>
-                    <img src={team.logo} className="teamLogo" alt = "NBA team logo"></img>
+                    <img src={team.logo} className="teamLogo" alt="NBA team logo"></img>
                     <label className="teamLabel">
                         <input type="checkbox"
-                            id = "checkboxTeam"
+                            id="checkboxTeam"
                             value={team.team}
                             className="form-check-input input"
                             onChange={this.handleCheck}
@@ -93,7 +92,7 @@ export default class AddTeam extends React.Component {
         let mlbTeams = teamList.MLB.map((team, index) => {
             return (
                 <div className="form-check" key={index}>
-                    <img src={team.logo} className="teamLogo" alt = "MLB team logo"></img>
+                    <img src={team.logo} className="teamLogo" alt="MLB team logo"></img>
                     <label className="teamLabel">
                         <input type="checkbox" value={team.team}
                             className="form-check-input input"
@@ -109,7 +108,7 @@ export default class AddTeam extends React.Component {
         let nflTeams = teamList.NFL.map((team, index) => {
             return (
                 <div className="form-check" key={index}>
-                    <img src={team.logo} className="teamLogo" alt = "NFL team logo"></img>
+                    <img src={team.logo} className="teamLogo" alt="NFL team logo"></img>
                     <label className="teamLabel">
                         <input type="checkbox" value={team.team}
                             className="form-check-input input"
@@ -125,7 +124,7 @@ export default class AddTeam extends React.Component {
         let nhlTeams = teamList.NHL.map((team, index) => {
             return (
                 <div className="form-check" key={index}>
-                    <img src={team.logo} className="teamLogo" alt = "NHL team logo"></img>
+                    <img src={team.logo} className="teamLogo" alt="NHL team logo"></img>
                     <label className="teamLabel">
                         <input type="checkbox" value={team.team}
                             className="form-check-input input"
@@ -147,7 +146,7 @@ export default class AddTeam extends React.Component {
                 <button type="button" id="cancel"
                     onClick={() => this.setEditing(false)}
                 >
-                    <img src={cancelIcon} id="cancelImg" alt = "Cancel"></img>
+                    <img src={cancelIcon} id="cancelImg" alt="Cancel"></img>
                 </button>
 
                 <form onSubmit={(e) => this.onSubmit(e)}>
