@@ -1,4 +1,26 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Pulse
+
+Check out a live version of the app <a href = "https://still-shore-25913.herokuapp.com/">here</a>.
+
+## App Summary
+Pulse is a one-stop-shop for everything sports news. Choose all of your favorite professional teams that you want to follow and we will give you a feed of aggregated news from hundreds of news outlets. Staying current has never been so easy.
+
+
+![Article Feed](LandingTop.png?raw=true)
+<br>
+![Article Feed](LandingMiddle.png?raw=true)
+<br>
+![Article Feed](LandingBottom.png?raw=true)
+
+
+ ## Technology Used
+ This site was built with React.
+ 
+ ## API Documentation
+ Please visit <a href = "https://github.com/robbylewis7/pulse-server">here</a> for backend documentation.
+ 
+
+
 
 ## Available Scripts
 
