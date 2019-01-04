@@ -12,9 +12,13 @@ Pulse is a one-stop-shop for everything sports news. Choose all of your favorite
 <br>
 ![Article Feed](LandingBottom.png?raw=true)
 
+
+ ## Technology Used
+ This site was built with React.
  
-
-
+ ## API Documentation
+ Please visit <a href = "https://github.com/robbylewis7/pulse-server">here</a> for backend documentation.
+ 
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
