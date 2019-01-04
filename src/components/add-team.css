@@ -15,7 +15,7 @@ h2{
 }
 
 .form-check{
-    margin: 10px 2px;
+    margin: 10px 0px;
 }
 
 #cancel{
@@ -93,16 +93,22 @@ form{
     align-content: center;
 }
 
+
+
+label {
+    display: inline-block;
+    position: relative;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 5px;
+  }
+
+
+
 .teamLabel{
     display: flex;
     align-content: center;
-
-
 }
-
-
-
-
 
 .saveButton{
     width: 30%;

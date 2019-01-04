@@ -59,6 +59,7 @@ export default class AddTeam extends React.Component {
         if (!this.state.editing) {
             return (
                 <div className="add-button">
+                
                 <h1 id = "team">Teams</h1>
                     <button id="addTeam"
                         onClick={() => this.setEditing(true)}
@@ -76,8 +77,8 @@ export default class AddTeam extends React.Component {
                     <img src={team.logo} className="teamLogo" alt = "NBA team logo"></img>
                     <label className="teamLabel">
                         <input type="checkbox"
+                            className = "checkboxTeam"
                             value={team.team}
-                            className="form-check-input input"
                             onChange={this.handleCheck}
                             defaultChecked={savedTeams.includes(team.team) ? true : false}
                         />
@@ -94,7 +95,7 @@ export default class AddTeam extends React.Component {
                     <img src={team.logo} className="teamLogo" alt = "MLB team logo"></img>
                     <label className="teamLabel">
                         <input type="checkbox" value={team.team}
-                            className="form-check-input input"
+                            className = "checkboxTeam"
                             onChange={this.handleCheck}
                             defaultChecked={savedTeams.includes(team.team) ? true : false}
                         />
@@ -110,7 +111,7 @@ export default class AddTeam extends React.Component {
                     <img src={team.logo} className="teamLogo" alt = "NFL team logo"></img>
                     <label className="teamLabel">
                         <input type="checkbox" value={team.team}
-                            className="form-check-input input"
+                            className = "checkboxTeam"
                             onChange={this.handleCheck}
                             defaultChecked={savedTeams.includes(team.team) ? true : false}
                         />
@@ -126,7 +127,8 @@ export default class AddTeam extends React.Component {
                     <img src={team.logo} className="teamLogo" alt = "NHL team logo"></img>
                     <label className="teamLabel">
                         <input type="checkbox" value={team.team}
-                            className="form-check-input input"
+                            className = "checkboxTeam"
+                            id = "check"
                             onChange={this.handleCheck}
                             defaultChecked={savedTeams.includes(team.team) ? true : false}
                         />
