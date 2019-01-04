@@ -11,6 +11,6 @@ describe('<Main />', () => {
 it('Hidden should be true', () => {
     const wrapper = shallow(<Main />);
     wrapper.simulate('click');
-    expect(wrapper.state('hidden')).toEqual(true);
+    expect(wrapper.state('hidden')).toEqual(false);
 });
 

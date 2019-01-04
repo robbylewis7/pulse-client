@@ -80,11 +80,9 @@ export default class Signup extends React.Component {
       .then(data => {
         if (!data.ok) {
           return Promise.reject(data);
+          this.redirectLogin()
         }
       })
-      .then(
-        this.redirectLogin()
-      )
       .catch(error => {
         console.log(error);
         this.setState({
